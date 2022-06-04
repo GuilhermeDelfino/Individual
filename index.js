@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(__dirname + "/app/public"));
-app.use(express.static(__dirname + "/app/public/html"));
+app.use(express.static(__dirname + "/app/public/view"));
 
 app.get("/", (req, res) => {
   res.render("index");

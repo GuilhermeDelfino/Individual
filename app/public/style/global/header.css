@@ -22,3 +22,12 @@ body {
   max-width: 100px;
   height: 100%;
 }
+.header .navbar .menu-link {
+  opacity: 0.85;
+}
+.header .navbar .menu-link:hover {
+  opacity: 0.95;
+}
+.header .navbar .menu-link.underline {
+  opacity: 1;
+}

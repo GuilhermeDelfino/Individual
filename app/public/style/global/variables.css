@@ -1,7 +1,7 @@
 :root {
   /* BLUE */
   --blue-1: #e4eaff;
-  --blue-2: #cad6ff;
+  --blue-2: #cfd9fd;
   --blue-3: #afc8f9;
   --blue-4: #7ec3ea;
   --blue-5: #63a3df;
@@ -56,10 +56,10 @@
   --above-4: 99999999;
 
   /* Shadow */
-  --shadow-small: 0 1px 1px 0 rgb(23, 24, 28, 0.2);
-  --shadow-medium: 0 2px 4px 0 rgb(23, 24, 28, 0.2);
-  --shadow-blur-1: 0 4px 16px -2px rgb(23, 24, 28, 0.2);
-  --shadow-blue-2: 0 4px 14px -4px rgb(23, 24, 28, 0.4);
+  --shadow-small: 0 1px 1px 0 rgb(23, 24, 28, 0.3);
+  --shadow-medium: 0 2px 4px 0 rgb(23, 24, 28, 0.3);
+  --shadow-blur-1: 0 4px 12px -1px rgb(23, 24, 28, 0.3);
+  --shadow-blur-2: 0 6px 24px -2px rgb(23, 24, 28, 0.4);
 
   /* Font */
   --font-neutral: "Open Sans", -apple-system, Roboto, Helvetica, Arial,

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio | Yato</title>
+    <%- include('components/head.ejs') %>
+    <link rel="stylesheet" href="../style/pages/index.css" />
+  </head>
+  <body>
+    <%- include('components/header.ejs') %>
+
+    <section class="hero flex">
+      <div class="content container-lg m-auto">
+        <h2 class="title-3 container-sm font-bold font-action">
+          Cadastre-se para <br />saber sobre:
+        </h2>
+        <ul class="list-hero">
+          <li class="list-hero-item">
+            <span class="material-symbols-outlined list-hero-icon title-1">
+              help
+            </span>
+            <span class="list-hero-text font-lg font-action hover-underline">
+              O Por Quê da Escolha
+            </span>
+          </li>
+          <li class="list-hero-item">
+            <span class="material-symbols-outlined list-hero-icon title-1">
+              person_search
+            </span>
+            <span class="list-hero-text font-lg font-action hover-underline">
+              Sobre o Personagem
+            </span>
+          </li>
+          <li class="list-hero-item">
+            <span class="material-symbols-outlined list-hero-icon title-1">
+              notes
+            </span>
+            <span class="list-hero-text font-lg font-action hover-underline">
+              Detalhes e Clips
+            </span>
+          </li>
+        </ul>
+        <button class="button font-xlg">cadastrar</button>
+      </div>
+      <div class="box-detail">
+        <div class="point-detail"></div>
+        <div class="point-detail"></div>
+        <div class="point-detail"></div>
+        <div class="point-detail"></div>
+        <div class="point-detail"></div>
+        <div class="point-detail"></div>
+        <div class="point-detail"></div>
+        <div class="point-detail"></div>
+        <div class="point-detail"></div>
+      </div>
+    </section>
+
+    <main>
+      <section class="main-features container-lg m-auto mt-section">
+        <h2 class="title-2 font-bold font-action point-detail-after mb">
+          Principais funcionalidades
+        </h2>
+
+        <section class="cards mt flex align-center flex-between">
+          <div class="card card-md shadow-blur-1">
+            <h4 class="card-md-title title-1">Métricas</h4>
+            <ul class="card-md-list font-md">
+              <li class="card-md-item point-detail-after">
+                Clips mais favoritados
+              </li>
+              <li class="card-md-item point-detail-after">
+                Quantidade de usuários
+              </li>
+              <li class="card-md-item point-detail-after">
+                Média de idade dos usuários
+              </li>
+            </ul>
+          </div>
+          <div class="card card-main">
+            <h4 class="card-main-title title-2 font-bold">Clips</h4>
+            <ul class="card-main-list font-lg">
+              <li class="card-main-item point-detail-after">Criar Clip</li>
+              <li class="card-main-item point-detail-after">Favoritar Clip</li>
+              <li class="card-main-item point-detail-after">
+                Ver Clips de outros
+              </li>
+              <li class="card-main-item point-detail-after">
+                Fazer comentários
+              </li>
+            </ul>
+          </div>
+          <div class="card card-md">
+            <h4 class="card-md-title title-1">Acesso</h4>
+            <ul class="card-md-list font-md">
+              <li class="card-md-item point-detail-after">
+                Sobre o personagem
+              </li>
+              <li class="card-md-item point-detail-after">
+                Biografia e detalhes
+              </li>
+              <li class="card-md-item point-detail-after">
+                Por quê da escolha
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <section class="comments mt-section">
+        <div class="container-lg m-auto">
+          <h2 class="title-2 font-bold font-action point-detail-after mb">
+            Comentários
+          </h2>
+        </div>
+
+        <section class="flex flex-around align-center">
+          <div
+            class="comment text-center flex-center flex align-center flex-column"
+          >
+            <h4 class="font-lg font-bold underline comment-title">
+              Fernando Brandão
+            </h4>
+            <div class="comment-body font-xsm">
+              “O conteudo do site está completo e as funcionalidades também” -
+              2022
+            </div>
+          </div>
+          <div
+            class="comment text-center flex-center flex align-center flex-column"
+          >
+            <h4 class="font-lg font-bold underline comment-title">
+              Fernando Brandão
+            </h4>
+            <div class="comment-body font-xsm">
+              “O conteudo do site está completo e as funcionalidades também” -
+              2022
+            </div>
+          </div>
+          <div class="comment comment-main flex-center flex-column flex">
+            <h4 class="title-1 font-bold underline comment-title main">
+              Guilherme Delfino
+            </h4>
+            <div class="comment-body main font-md">
+              “Eu adorei o site! Nele eu posso saber dos conteudo do personagem
+              e ainda entendo um pouco mais do autor!” - 2022
+            </div>
+          </div>
+          <div
+            class="comment text-center flex-center flex align-center flex-column"
+          >
+            <h4 class="font-lg font-bold underline comment-title">Dan</h4>
+            <div class="comment-body font-xsm">
+              “O site tem as funcionalidades e os quesitos de socioemocional” -
+              2022
+            </div>
+          </div>
+          <div
+            class="comment text-center flex-center flex align-center flex-column"
+          >
+            <h4 class="font-lg font-bold underline comment-title">Dan</h4>
+            <div class="comment-body font-xsm">
+              “O site tem as funcionalidades e os quesitos de socioemocional” -
+              2022
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <%- include('components/footer.ejs') %>
+  </body>
+</html>

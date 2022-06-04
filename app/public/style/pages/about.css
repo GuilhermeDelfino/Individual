@@ -1,0 +1,10 @@
+.about img {
+  border-radius: var(--radius-md);
+}
+.about h2 {
+  color: var(--blue-8);
+}
+.about article {
+  margin-top: 20px;
+  color: var(--gray-9);
+}

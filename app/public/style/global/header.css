@@ -10,6 +10,8 @@ body {
   overflow: auto;
   height: 80px;
   background-color: var(--gray-9);
+
+  box-shadow: var(--shadow-blur-2);
 }
 .header .navbar {
   height: 100%;

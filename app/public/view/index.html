@@ -4,10 +4,116 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Inicio | Yato</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/pages/index.css" />
   </head>
-
-    
   <body>
+    <header class="header">
+      <nav class="navbar container-lg flex-between flex align-center m-auto">
+        <div class="logo">
+          <img
+            src="../assets/img/Icon.svg"
+            alt="Logotipo, logomarca, logo, noragami, eye"
+          />
+        </div>
+        <ul class="menu container-sm flex-around flex align-center">
+          <li class="menu-item">
+            <a href="./index.html" class="menu-link">Ínicio</a>
+          </li>
+          <li class="point-detail"></li>
+          <li class="menu-item">
+            <a href="./about.html" class="menu-link">Sobre</a>
+          </li>
+          <li class="point-detail"></li>
+          <li class="menu-item">
+            <a href="./why.html" class="menu-link">Por Quê?</a>
+          </li>
+          <li class="point-detail"></li>
+          <li class="menu-item">
+            <a href="./signin.html" class="menu-link">Entrar</a>
+          </li>
+          <a class="button" href="./signup.html">CADASTRAR</a>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero flex">
+      <div class="content container-lg m-auto">
+        <h2 class="title-2 container-sm font-bold font-action">
+          Cadastre-se para saber sobre:
+        </h2>
+        <ul class="list-hero">
+          <li class="list-hero-item">
+            <span class="material-symbols-outlined list-hero-icon title-1">
+              help
+            </span>
+            <span class="list-hero-text font-xmd font-action">
+              O Por Quê da Escolha
+            </span>
+          </li>
+          <li class="list-hero-item">
+            <span class="material-symbols-outlined list-hero-icon title-1">
+              person_search
+            </span>
+            <span class="list-hero-text font-xmd font-action">
+              Sobre o Personagem
+            </span>
+          </li>
+          <li class="list-hero-item">
+            <span class="material-symbols-outlined list-hero-icon title-1">
+              notes
+            </span>
+            <span class="list-hero-text font-xmd font-action">
+              Detalhes e Clips
+            </span>
+          </li>
+        </ul>
+        <button class="button font-lg">cadastrar</button>
+      </div>
+    </section>
+
+    <main class="mt">
+      <section class="main-features container-lg">
+        <div class="main-features-title">
+          <h2>Principais funcionalidades</h2>
+          <div class="point-detail"></div>
+        </div>
+
+        <section class="cards">
+          <div class="card-md">
+            <h4 class="card-md-title">Métricas</h4>
+            <ul class="card-md-list">
+              <li class="card-md-item">Clips mais favoritados</li>
+              <li class="card-md-item">Quantidade de usuários</li>
+              <li class="card-md-item">Média de idade dos usuários</li>
+            </ul>
+          </div>
+          <div class="card-main">
+            <h4 class="card-main-title">Clips</h4>
+            <ul class="card-main-list">
+              <li class="card-main-item">Criar Clip</li>
+              <li class="card-main-item">Favoritar Clip</li>
+              <li class="card-main-item">Ver Clips de outros</li>
+              <li class="card-main-item">Fazer comentários</li>
+            </ul>
+          </div>
+          <div class="card-md">
+            <h4 class="card-md-title">Clips</h4>
+            <ul class="card-md-list">
+              <li class="card-md-item">Criar Clip</li>
+              <li class="card-md-item">Favoritar Clip</li>
+              <li class="card-md-item">Ver Clips de outros</li>
+              <li class="card-md-item">Fazer comentários</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer></footer>
   </body>
 </html>

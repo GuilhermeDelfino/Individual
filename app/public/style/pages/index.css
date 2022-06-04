@@ -1,0 +1,22 @@
+.hero {
+  height: 700px;
+  width: 100%;
+  background-image: url(../../assets/img/background-hero.png);
+  color: var(--gray-1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero .content {
+  width: 100%;
+}
+.hero .content .list-hero-item {
+  margin-top: 20px;
+}
+.hero .content .list-hero-icon {
+  font-weight: bolder;
+  color: var(--blue-4);
+}
+.hero .content .button {
+  color: var(--gray-1);
+  margin-top: 40px;
+}

@@ -1,1 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* GLOBAL CLASSES */
+@import url(./global/variables.css);
+@import url(./global/reset.css);
+@import url(./global/class.css);
+@import url(./global/header.css);

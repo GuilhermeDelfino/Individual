@@ -1,29 +1,38 @@
 .font-xsm {
   font-size: 14px;
+  line-height: 18px;
 }
 .font-sm {
   font-size: 15px;
+  line-height: 20px;
 }
 .font-md {
   font-size: 16px;
+  line-height: 24px;
 }
 .font-xmd {
   font-size: 18px;
+  line-height: 28px;
 }
 .font-lg {
   font-size: 20px;
+  line-height: 32px;
 }
 .font-xlg {
   font-size: 24px;
+  line-height: 36px;
 }
 .title-1 {
   font-size: 36px;
+  line-height: 42px;
 }
 .title-2 {
   font-size: 48px;
+  line-height: 56px;
 }
 .title-3 {
   font-size: 64px;
+  line-height: 72px;
 }
 .font-action {
   font-family: var(--font-action);
@@ -32,7 +41,8 @@
   font-family: var(--font-neutral);
 }
 .font-bold {
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 .font-medium {
   font-weight: 600;
@@ -41,42 +51,51 @@
 .input {
 }
 .button {
-}
-.label {
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-small);
+  background-image: linear-gradient(to bottom, var(--blue-5), var(--blue-6));
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-family: var(--font-neutral);
 }
 
 .container-lg {
+  max-width: 1200px;
 }
 .container-md {
+  max-width: 800px;
 }
 .container-sm {
-}
-.container-xmd {
+  max-width: 480px;
 }
 
 /* DISPLAY */
+.flex {
+  display: flex;
+}
 .flex-center {
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
-
+.flex-start {
+  justify-content: flex-start;
+}
+.flex-start {
+  justify-content: flex-start;
+}
 .flex-around {
-  display: flex;
   justify-content: space-around;
-  align-items: center;
 }
-
 .flex-between {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-
 .flex-column {
   flex-direction: column;
 }
-
+.align-center {
+  align-items: center;
+}
 .d-none {
   display: none;
 }
@@ -85,10 +104,12 @@
   border: 3px solid red;
 }
 
+.m-auto {
+  margin: auto;
+}
 .mt {
   margin-top: 10px;
 }
-
 .mb {
   margin-bottom: 10px;
 }
@@ -113,18 +134,43 @@
   padding-left: 10px;
 }
 
+.point-detail {
+  width: 8px;
+  border-radius: 50%;
+  height: 8px;
+  background-color: var(--blue-6);
+}
+.detail {
+  display: grid;
+  gap: 4px;
+}
+.detail .point-detail {
+  width: 8px;
+  height: 8px;
+  background-color: var(--blue-2);
+}
+
+.radius {
+  border-radius: 6px;
+}
+.radius-sm {
+  border-radius: 3px;
+}
+.radius-lg {
+  border-radius: 12px;
+}
 
 /* KEYFRAME */
 @keyframes shake {
-    25% {
-        transform: translateX(4px);
-    }
+  25% {
+    transform: translateX(4px);
+  }
 
-    50% {
-        transform: translateX(-4px);
-    }
+  50% {
+    transform: translateX(-4px);
+  }
 
-    75% {
-        transform: translateX(4px);
-    }
+  75% {
+    transform: translateX(4px);
+  }
 }

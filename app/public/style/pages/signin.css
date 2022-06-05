@@ -1,0 +1,69 @@
+.signin > div {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 450px;
+}
+.signin .left {
+  width: 65%;
+  padding: 20px;
+  background: var(--gray-1);
+  height: 80%;
+  align-self: center;
+}
+.signin .left h1 {
+  margin-bottom: 20px;
+  color: var(--gray-10);
+}
+.signin .left h1::after {
+  top: 65%;
+  width: 12px;
+  height: 12px;
+  left: 45%;
+}
+.signin .left .input {
+  padding: 6px 12px;
+}
+.signin .left .button {
+  max-width: 200px;
+  color: var(--gray-1);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.signin .right {
+  background-color: var(--blue-6);
+  padding: 20px;
+  width: 35%;
+  text-align: center;
+}
+.signin .right h3 {
+  line-height: 36px;
+  color: var(--blue-9);
+}
+.signin .right img {
+  max-width: 180px;
+  margin-bottom: 30px;
+  max-height: 180px;
+}
+.signin .right p {
+  color: var(--blue-2);
+}
+.signin .right a {
+  margin-top: 30px;
+  color: var(--gray-1);
+}
+
+.signup > div {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 600px;
+}
+.signup .left h1::after {
+  left: 67%;
+}
+.signup .left .input {
+  padding: 4px 8px;
+}
+.signup .right img {
+  max-width: 220px;
+  max-height: 220px;
+}

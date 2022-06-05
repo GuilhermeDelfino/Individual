@@ -4,13 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio | Yato</title>
+    <title>Entrar | Yato</title>
     <%- include('components/head.ejs') %>
-    <link rel="stylesheet" href="../style/pages/index.css" />
+    <link rel="stylesheet" href="../style/pages/signin.css" />
   </head>
   <body>
     <%- include('components/header.ejs') %>
-    <main></main>
+    <main class="signin">
+      <div
+        class="container-md m-auto flex flex-between mt-section shadow-blur-1"
+      >
+        <div class="left flex flex-column flex-around">
+          <h1 class="point-detail-after title-3 font-bold font-action">
+            Entrar
+          </h1>
+          <form>
+            <div class="flex flex-column mb mt">
+              <label class="font-xmd" for="in_email_signin">E-mail:</label>
+              <input type="text" id="in_email_signin" class="input mb" />
+            </div>
+            <div class="flex flex-column mb mt">
+              <label class="font-xmd" for="in_password_signin">Senha:</label>
+              <input type="password" id="in_password_signin" class="input mb" />
+            </div>
+            <div class="flex flex-between align-center mb mt">
+              <div class="checkbox align-center flex flex-between w-100">
+                <div class="checkbox align-center flex">
+                  <input type="checkbox" class="mr" id="cb_remeber" />
+                  <label class="font-sm" for="cb_remeber">Lembrar de mim</label>
+                </div>
+                <a href="#" class="font-xsm font-medium">Esqueci minha senha</a>
+              </div>
+            </div>
+          </form>
+          <button class="button font-lg font-bold">ENTRAR</button>
+        </div>
+        <div class="right flex flex-center align-center flex-column">
+          <img
+            src="../assets/img/yato-login.png"
+            width="200px"
+            alt="login, yato, signin, chibi"
+          />
+          <div class="center">
+            <h3 class="title-1 font-medium font-action mb">
+              Não tem uma conta?
+            </h3>
+            <p class="font-xsm font-medium mt">
+              Venha fazer parte dessa comunidade também!
+            </p>
+          </div>
+          <a href="/signup" class="font-lg font-medium hover-underline"
+            >Cadastre-se!</a
+          >
+        </div>
+      </div>
+    </main>
     <%- include('components/footer.ejs') %>
   </body>
 </html>

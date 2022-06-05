@@ -55,16 +55,17 @@
   padding: 3px 6px;
   background: var(--gray-2);
   color: var(--gray-12);
-  opacity: 0.9;
-  border: 1px solid var(--gray-4);
-  box-shadow: var(--shadow-sm);
+  opacity: 0.8;
+  transition: 0.6s ease;
+  border: 1px solid var(--gray-3);
+  box-shadow: var(--shadow-small);
 }
 .input:focus,
 .input:hover {
-  background: var(--gray-1);
   opacity: 1;
-  box-shadow: var(--shadow-md);
-  transform: translateY(-1px);
+  background: var(--gray-1);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
 }
 .button {
   padding: 10px 20px;
@@ -92,6 +93,23 @@ button:focus {
   flex-wrap: wrap;
   gap: 10px;
   position: absolute;
+}
+.box-detail.top {
+  top: 14%;
+}
+.w-100 {
+  width: 100%;
+}
+.row-half {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.row-half > * {
+  width: 48%;
+}
+.box-detail.right {
+  right: 5%;
 }
 .box-detail .point-detail {
   background: var(--blue-2);

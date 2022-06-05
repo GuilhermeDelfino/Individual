@@ -21,7 +21,8 @@ const signin = async () => {
             console.log(res);
             if (res.message === 'OK' && res.result.length > 0) {
                 clearFields();
-                showAlert('success', 'Ebaa!', 'Usuario encontrado!');
+                sessionStorage.setItem('user', JSON.stringify(res.result[0]));
+                window.location.href = '/profile';
             } else {
                 showAlert('warning', 'Ops...', 'E-mail ou senha  incorretos!');
             }
@@ -63,3 +64,8 @@ const clearFields = () => {
     }
 };
 
+(() => {
+    if (checkSessionLogin() !== null) {
+        window.location.href = '/profile';
+    }
+})();

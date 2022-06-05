@@ -6,11 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio | Yato</title>
     <%- include('components/head.ejs') %>
-    <link rel="stylesheet" href="../style/pages/index.css" />
+    <link rel="stylesheet" href="../style/pages/add-comment.css" />
   </head>
   <body>
     <%- include('components/header.ejs') %>
-    <main></main>
+    <main class="add-comment">
+      <div
+        class="container-md flex flex-column mt-section m-auto flex-between shadow-blur-1 hover-shadow-2"
+      >
+        <h1 class="title-2 font-action font-medium point-detail-after">
+          Seu comentário irá aparecer na página
+        </h1>
+
+        <div class="flex flex-column">
+          <label for="comment" class="font-lg">Comentário</label>
+          <textarea id="comment" cols="30" class="input mt font-xmd"></textarea>
+        </div>
+        <button class="button font-bold font-lg" onclick="add_comment()">
+          Comentar
+        </button>
+      </div>
+    </main>
     <%- include('components/footer.ejs') %>
   </body>
+
+  <script src="../javascript/pages/add-comment.js"></script>
 </html>

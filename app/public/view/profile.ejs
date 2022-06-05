@@ -4,13 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio | Yato</title>
+    <title>Perfil | Yato</title>
     <%- include('components/head.ejs') %>
-    <link rel="stylesheet" href="../style/pages/index.css" />
+    <link rel="stylesheet" href="../style/pages/profile.css" />
   </head>
   <body>
     <%- include('components/header.ejs') %>
-    <main></main>
+    <main class="profile">
+      <div
+        class="container-lg flex-column flex m-auto mt-section shadow-blur-1 hover-shadow-2"
+      >
+        <h1
+          class="title-3 font-medium font-action point-detail-after container-md"
+        >
+          Bem vindo de volta, Delfino
+        </h1>
+        <div class="row-half">
+          <div class="flex align-center">
+            <label for="name" class="font-medium font-xlg">Nome:</label>
+            <input type="text" id="name" disabled class="input ml w-100" />
+          </div>
+          <div class="flex align-center">
+            <label for="lastname" class="font-medium font-xlg"
+              >Sobrenome:</label
+            >
+            <input type="text" id="lastname" disabled class="input ml w-100" />
+          </div>
+        </div>
+        <div class="flex align-center">
+          <label for="email" class="font-medium font-xlg">Email:</label>
+          <input type="text" id="email" disabled class="input ml w-100" />
+        </div>
+        <div class="row-half">
+          <div class="flex align-center">
+            <label for="age" class="font-medium font-xlg">Idade:</label>
+            <input type="text" id="age" disabled class="input ml" />
+          </div>
+          <div class="flex align-center">
+            <label for="gender" class="font-medium font-xlg">Gênero:</label>
+            <input type="text" id="gender" disabled class="input ml w-100" />
+          </div>
+        </div>
+        <div class="flex w-100 m-auto mt flex-between align-center analytics">
+          <div class="font-lg shadow-medium hover-shadow-1">
+            Comentarios feitos <span id="comments">10</span>
+          </div>
+          <div class="font-lg shadow-medium hover-shadow-1">
+            Clips adicionados <span id="added_clip">10</span>
+          </div>
+          <div class="font-lg shadow-medium hover-shadow-1">
+            Clips favoritados <span id="favorited_clips">10</span>
+          </div>
+        </div>
+      </div>
+    </main>
     <%- include('components/footer.ejs') %>
   </body>
+
+  <script src="../javascript/pages/profile.js"></script>
 </html>

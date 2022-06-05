@@ -25,9 +25,6 @@ route.get('/add/clips', (req, res) => {
 route.get('/add/comment', (req, res) => {
     res.render("add-comment");
 });
-route.get('/analytics', (req, res) => {
-    res.render("analytics");
-});
 route.get('/profile', (req, res) => {
     res.render("profile");
 });

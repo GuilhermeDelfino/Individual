@@ -6,23 +6,43 @@
         alt="Logotipo, logomarca, logo, noragami, eye"
       />
     </div>
-    <ul class="menu container-sm flex-around flex align-center">
-      <li class="menu-item">
+    <ul class="menu flex-around flex align-center">
+      <li class="menu-item" data-permisson="all">
         <a href="/" class="menu-link underline">Ínicio</a>
       </li>
       <li class="point-detail"></li>
-      <li class="menu-item">
+      <li class="menu-item" data-permisson="all">
         <a href="/about" class="menu-link">Sobre</a>
       </li>
       <li class="point-detail"></li>
-      <li class="menu-item">
+      <li class="menu-item" data-permisson="all">
         <a href="/why" class="menu-link">Por Quê?</a>
       </li>
       <li class="point-detail"></li>
-      <li class="menu-item">
+      <li class="menu-item" data-permisson="ghost">
         <a href="/signin" class="menu-link">Entrar</a>
       </li>
-      <a class="button" href="/signup">CADASTRAR</a>
+      <li class="menu-item" data-permisson="auth">
+        <a href="/clips" class="menu-link">Clipes</a>
+      </li>
+      <li class="point-detail" data-permisson="auth"></li>
+      <li class="menu-item" data-permisson="auth">
+        <a href="/add/comment" class="menu-link">Comentários</a>
+      </li>
+      <li class="point-detail" data-permisson="auth"></li>
+      <li class="menu-item" data-permisson="auth">
+        <a href="/profile" class="menu-link">User</a>
+      </li>
+      <li class="point-detail"></li>
+      <a
+        class="menu-link flex align-center"
+        data-permisson="auth"
+        onclick="logout()"
+      >
+        Sair
+        <i class="fa-solid fa-right-from-bracket ml"></i>
+      </a>
+      <a class="button" data-permisson="ghost" href="/signup">CADASTRAR</a>
     </ul>
   </nav>
 </header>
@@ -37,3 +57,5 @@
   <div class="point-detail"></div>
   <div class="point-detail"></div>
 </div>
+
+<script src="../../javascript/global.js"></script>

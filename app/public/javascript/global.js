@@ -19,7 +19,42 @@ const showAlert = (type, title, body) => {
 
             setTimeout(() => {
                 document.body.querySelector('.alert').remove();
-            }, 2000);
-        }, 2000);
+            }, 1000);
+        }, 3500);
     }, 200);
+};
+
+const checkSessionLogin = () => {
+    let user = sessionStorage.getItem('user');
+
+    if (user !== undefined) {
+        return JSON.parse(user);
+    }
+    return null;
+};
+(() => {
+    let user = checkSessionLogin();
+    /** @type {HTMLElement} */
+    let header = document.querySelector('header.header');
+    let dataPermission = [];
+    if (user !== null) {
+        sessionStorage.setItem('permission', 'auth');
+        dataPermission = header.querySelectorAll(`[data-permisson='ghost']`);
+
+        header.querySelector(`a[href='/profile']`).innerHTML =
+            `
+            ${user.name.split(' ').length > 0 ? user.name.split(' ')[0] : user.name}
+        `;
+    } else {
+        sessionStorage.setItem('permission', 'ghost');
+        dataPermission = header.querySelectorAll(`[data-permisson='auth']`);
+    }
+    dataPermission.forEach(el => el.classList.add('d-none'));
+})();
+
+const logout = () => {
+    if (checkSessionLogin() !== null) {
+        sessionStorage.removeItem('user');
+        window.location.reload();
+    }
 };

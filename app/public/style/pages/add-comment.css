@@ -1,0 +1,18 @@
+.add-comment > div {
+  padding: 50px;
+  border-radius: var(--radius-lg);
+  height: 500px;
+  background-color: var(--blue-7);
+  color: var(--blue-1);
+}
+.add-comment h1 {
+  color: var(--blue-9);
+}
+.add-comment textarea {
+  padding: 10px;
+  min-height: 150px;
+}
+.add-comment > div .button {
+  max-width: 200px;
+  font-weight: bolder;
+}

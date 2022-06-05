@@ -60,7 +60,13 @@ const verifyFields = () => {
     return !error;
 };
 
-const verifyPassword = () => in_password_signin.value === in_ver_password_signin.value;
+const verifyPassword = () => {
+    if (in_password_signin.value === in_ver_password_signin.value) {
+        return true;
+    }
+    showAlert('warning', 'Tome cuidado!', 'Senha não são iguais!');
+    return false;
+};
 
 const clearFields = () => {
     let fields = [
@@ -78,3 +84,9 @@ const clearFields = () => {
     in_gender_signin.value = 0;
 };
 
+
+(() => {
+    if (checkSessionLogin() !== null) {
+        window.location.href = '/profile';
+    }
+})();

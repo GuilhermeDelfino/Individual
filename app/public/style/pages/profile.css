@@ -1,0 +1,54 @@
+.profile > div {
+  height: 600px;
+  background-color: var(--blue-7);
+  border-radius: var(--radius-lg);
+
+  color: var(--blue-1);
+  padding: 50px;
+}
+.profile h1 {
+  color: var(--blue-9);
+  margin-bottom: 20px;
+}
+.profile > div > div {
+  margin-top: 20px;
+}
+.profile > div > div label {
+  text-align: right;
+  margin-right: 10px;
+  width: 150px;
+  /* border: 1px solid red; */
+}
+.profile > div > div input {
+  font-size: 18px;
+  font-weight: 600;
+  width: 300px;
+}
+.profile > div > div input#email {
+  width: calc(100% - 230px);
+}
+.profile h1::after {
+  width: 12px;
+  height: 12px;
+  background-color: var(--gray-1);
+  top: 80%;
+  margin-left: 10px;
+}
+.profile .analytics > div {
+  padding: 20px;
+  margin-top: 20px;
+  width: 30%;
+  height: 120px;
+  background: var(--blue-9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--blue-1);
+  border-radius: var(--radius-md);
+}
+.profile .analytics > div span {
+  font-size: 36px;
+  margin-left: 10px;
+  font-weight: bolder;
+}

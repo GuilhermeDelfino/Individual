@@ -22,6 +22,7 @@ body {
 }
 .header .menu {
   color: var(--gray-1);
+  max-width: 700px;
   width: 100%;
 }
 .header .navbar .logo {
@@ -36,4 +37,8 @@ body {
 }
 .header .navbar .menu-link.underline {
   opacity: 1;
+}
+
+.header .navbar .dropdown {
+  position: relative;
 }

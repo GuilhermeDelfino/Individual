@@ -77,6 +77,7 @@
   font-weight: 600;
   font-family: var(--font-neutral);
   opacity: 0.9;
+  color: inherit;
 }
 .button:hover,
 button:focus {
@@ -104,6 +105,7 @@ button:focus {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
+  flex-direction: row;
 }
 .row-half > * {
   width: 48%;

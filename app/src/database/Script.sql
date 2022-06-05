@@ -40,3 +40,9 @@ CREATE TABLE tbClipFavorite(
     CONSTRAINT ct_pkClipFavorite PRIMARY KEY (_idClipFavorite, fkUser, fkClip),
 	createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
 ) AUTO_INCREMENT = 400;
+
+CREATE TABLE tbNewsletter(
+    _idNewsletter INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(100),
+	createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
+);

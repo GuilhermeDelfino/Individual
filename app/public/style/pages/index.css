@@ -94,9 +94,6 @@
 
 /* COMMENTS */
 .comments {
-  width: 120vw;
-  margin-left: -10vw;
-  overflow: hidden;
   padding-bottom: 25px;
 }
 .comments > section {

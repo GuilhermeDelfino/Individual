@@ -1,3 +1,4 @@
+process.env.hashKey = 'delfino';
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -12,8 +13,10 @@ app.use(express.static(__dirname + "/app/public"));
 
 //? GETTING ROUTES
 const screenRoute = require('./app/src/routes/ScreensRoutes');
+const userRoute = require('./app/src/routes/UserRoute');
 
 app.use('/', screenRoute);
+app.use('/user', userRoute);
 
 app.listen(PORT, () =>
   console.log(`Seu servidor esta rodando no URL: http://localhost:${PORT}/`)

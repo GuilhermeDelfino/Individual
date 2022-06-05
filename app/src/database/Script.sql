@@ -6,7 +6,9 @@ CREATE TABLE tbUser(
     nameUser VARCHAR(60) NOT NULL,
     emailUser VARCHAR(60) NOT NULL,
 	passwordUser VARBINARY (150) NOT NULL, -- for hash blob
+    genderUser CHAR(1) CHECK (genderUser in ('M', 'F')),
     ageUser TINYINT NOT NULL,
+    rememberUser CHAR(1) CHECK (genderUser in ('M', 'F')),
     CONSTRAINT ct_checkAge CHECK (ageUser > 0 AND ageUser  < 100), -- age between 0 and 100
 	createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
 ) AUTO_INCREMENT = 100;

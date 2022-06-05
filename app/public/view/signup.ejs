@@ -57,19 +57,13 @@
             </div>
             <div class="row-half">
               <div class="flex flex-column mb">
-                <label class="font-xmd" for="in_password_signin">Idade:</label>
-                <input
-                  type="password"
-                  id="in_password_signin"
-                  class="input mb"
-                />
+                <label class="font-xmd" for="in_age_signin">Idade:</label>
+                <input type="number" id="in_age_signin" class="input mb" />
               </div>
               <div class="flex flex-column mb">
-                <label class="font-xmd" for="in_ver_password_signin"
-                  >Gênero:</label
-                >
-                <select id="in_ver_password_signin" class="input">
-                  <option value="0">Selecione</option>
+                <label class="font-xmd" for="in_gender_signin">Gênero:</label>
+                <select id="in_gender_signin" class="input">
+                  <option value="">Selecione</option>
                   <option value="M">Masculino</option>
                   <option value="F">Feminino</option>
                 </select>
@@ -84,7 +78,9 @@
               </div>
             </div>
           </form>
-          <button class="button font-lg font-bold mt">CADASTRAR</button>
+          <button class="button font-lg font-bold mt" onclick="signup()">
+            CADASTRAR
+          </button>
         </div>
         <div class="right flex flex-center align-center flex-column">
           <img
@@ -108,4 +104,7 @@
     </main>
     <%- include('components/footer.ejs') %>
   </body>
+
+  <script src="../javascript/global.js"></script>
+  <script src="../javascript/pages/signup.js"></script>
 </html>

@@ -30,8 +30,8 @@
   /* ACTIONS */
   --success-1: #a1ffbc;
   --success-2: #1cce4f;
-  --success-3: #0abd3e;
-  --success-4: #63b07b;
+  --success-3: #18a942;
+  --success-4: #008526;
 
   --error-1: #ffadb7;
   --error-2: #f07d8a;
@@ -40,8 +40,8 @@
 
   --warning-1: #fffba4;
   --warning-2: #eace38;
-  --warning-3: #d1b316;
-  --warning-4: #c0a40d;
+  --warning-3: #c0a30b;
+  --warning-4: #9f8701;
 
   --radius-sm: 3px;
   --radius-md: 6px;

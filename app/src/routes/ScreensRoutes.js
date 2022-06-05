@@ -19,7 +19,7 @@ route.get('/signup', (req, res) => {
 route.get('/clips', (req, res) => {
     res.render("clips");
 });
-route.get('/add/clips', (req, res) => {
+route.get('/add/clip', (req, res) => {
     res.render("add-clip");
 });
 route.get('/add/comment', (req, res) => {

@@ -4,11 +4,24 @@ const model = require('../model/UserModel');
  * @param {number} [id=0]
  * @return {<{message: string,result: Promise<Array<object>>,status: number}>} 
  */
-const index = async (id = 0) => {
-    if (id > 0) {
-
-    }
+const index = async () => {
     let values = await model.getAllUsers();
+    return {
+        message: 'OK',
+        result: values,
+        status: 200
+    };
+};
+const metrics = async (idUser) => {
+    let values = await model.getMetricsUser(idUser);
+    return {
+        message: 'OK',
+        result: values,
+        status: 200
+    };
+};
+const all_metrics = async () => {
+    let values = await model.getMetrics();
     return {
         message: 'OK',
         result: values,
@@ -45,19 +58,23 @@ const signin = async (email, password) => {
  * @param {age} age
  * @return {<{message: string,result?: Promise<Array<object>>,status: number}>} 
  */
-const set = async (name, email, password, age) => {
+const set = async (name, email, password, age, gender = 'M', remember = 'Y') => {
     let nameCorrect = name !== undefined && name.trim().length > 0;
     let emailCorrect = email !== undefined && email.trim().length > 0;
     let passwordCorrect = password !== undefined && password.trim().length > 0;
     let ageCorrect = age !== undefined && age > 0;
+    let genderCorrect = gender !== undefined && gender.trim().length > 0;
+    // let rememberCorrect = remember !== undefined && remember.trim().length > 0;
 
     let allCorrect = nameCorrect &&
         emailCorrect &&
         passwordCorrect &&
-        ageCorrect;
+        ageCorrect &&
+        genderCorrect
+        ;
 
     if (allCorrect) {
-        let values = await model.insertUser(name, email, password, age);
+        let values = await model.insertUser(name, email, password, age, gender);
         return {
             message: 'OK',
             result: values,
@@ -71,5 +88,7 @@ const set = async (name, email, password, age) => {
 module.exports = {
     index,
     set,
-    signin
+    signin,
+    metrics,
+    all_metrics,
 };

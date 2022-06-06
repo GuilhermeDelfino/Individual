@@ -11,5 +11,17 @@
     age.value = user.age;
     gender.value = 'Masculino';
 
+    fetch(`http://localhost:3000/user/get/metrics/`)
+        .then(val => val.json())
+        .then(json => {
+            json = json.result;
+            comments.innerHTML = json[0].qtdComments;
+            added_clip.innerHTML = json[0].qtdClip;
+            favorited_clips.innerHTML = json[0].qtdFavorite;
+        })
+        .catch(err => {
+            console.error(err);
+        });
+
 })();
 

@@ -9,8 +9,17 @@ route.get('/get', async (request, response) => {
         .status(datas.status);
 
 });
-route.get('/get/:id', (request, response) => {
-
+route.get('/get/metrics/:id', async (request, response) => {
+    let datas = await controller.metrics(request.params.id);
+    response
+        .json(datas)
+        .status(datas.status);
+});
+route.get('/get/metrics/', async (request, response) => {
+    let datas = await controller.all_metrics();
+    response
+        .json(datas)
+        .status(datas.status);
 });
 route.post('/signin', async (request, response) => {
     let email = request.body.email;

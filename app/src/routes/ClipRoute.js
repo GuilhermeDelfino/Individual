@@ -21,5 +21,14 @@ route.post('/post', async (request, response) => {
         .json(datas)
         .status(datas.status);
 });
+route.post('/favorite', async (request, response) => {
+    let fkUser = request.body.fkUser;
+    let fkClip = request.body.fkClip;
+
+    let datas = await controller.favorite(fkUser, fkClip);
+    response
+        .json(datas)
+        .status(datas.status);
+});
 
 module.exports = route;

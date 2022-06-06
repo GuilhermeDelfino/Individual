@@ -6,7 +6,7 @@ const signup = async () => {
             email: in_email_signin.value.trim(),
             password: in_password_signin.value.trim(),
             age: +in_age_signin.value,
-            gender: in_gender_signin
+            gender: in_gender_signin,
         };
         /** @type {RequestInit} */
         let options = {
@@ -76,7 +76,6 @@ const clearFields = () => {
         in_password_signin,
         in_ver_password_signin,
         in_age_signin,
-
     ];
     for (let i = 0; i < fields.length; i++) {
         fields[i].value = '';

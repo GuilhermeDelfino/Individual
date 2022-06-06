@@ -7,8 +7,8 @@ let user = checkSessionLogin();
 })();
 
 const add_clip = async () => {
-    let titleVar = comment.value.trim();
-    let urlVar = comment.value.trim();
+    let titleVar = title.value.trim();
+    let urlVar = url.value.trim();
 
     let titleCorrect = titleVar !== '' && titleVar.length > 0;
     let urlCorrect = urlVar !== '' && urlVar.length > 0;
@@ -33,9 +33,9 @@ const add_clip = async () => {
             let req = await fetch('http://localhost:3000/clip/post', options);
             /** @type {{message: string, result?: Array<any>, status: number}} */
             let res = await req.json();
-            console.log(res);
             if (res.message === 'OK') {
-                comment.value = '';
+                title.value = '';
+                url.value = '';
                 showAlert('success', 'Ebba!!', 'Seu Clip foi adicionado!');
             }
         } catch (error) {
